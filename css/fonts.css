@@ -1,0 +1,33 @@
+/*FONT FACE*/
+@font-face {
+    font-family: 'Sintony';
+    src: url('Sintony.woff2') format('woff2'),
+        url('Sintony.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sintony Bold';
+    src: url('Sintony-Bold.woff2') format('woff2'),
+        url('Sintony-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Bold';
+    src: url('PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('PlayfairDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

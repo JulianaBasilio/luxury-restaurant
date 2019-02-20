@@ -1,19 +1,12 @@
 @import "reset.css";
-
-/*FONT FACE*/
-@font-face {
-    font-family: 'Sintony Regular';
-    src: url('../../fonts/sintony-regular.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
+@import "fonts.css";
 
 /*HEADER*/
 #header {
     background: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family: Sintony Regular;
+    font-family: 'Sintony';
     text-transform: uppercase;
 
     .logo {
