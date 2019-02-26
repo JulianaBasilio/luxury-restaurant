@@ -33,6 +33,7 @@ h2 {
             text-indent: -9999px;
             display: inline-block;
             height: 100%;
+            width: 100%;
         }
     }
 
@@ -80,20 +81,60 @@ h2 {
             }
         }
     }
-
-    
 }
 
+/*CAROUSEL*/
+#carousel-banner {
 
-// .card {
-//     background: red;
+    .title {
+        color: #fff;
+        font-size: 56px;
+        position: absolute;
+        top: 45%;
+    }
 
-//     &__title {
-//         color: white;
-//     }
+    .title__text {
+        display: block;
+        font-size: 40px;
+    }
 
-//     &__img {
-//         border: 1px solid #eee;
-//         border-radius: 5px;
-//     }
-// }
+    .title__text--highlight {
+        color: #fea100;
+    }
+
+    .carousel-indicators {
+        left: 50px;
+        width: auto;
+        margin-left: 0;
+        top: 50%;
+    }
+
+    .carousel-indicators li {
+        width: 13px;
+        height: 13px;
+        border-radius: 13px;
+        border-width: 2px;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .carousel-indicators .active {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        border-color: #fea100;
+        background: none;
+        position: relative;
+
+        &::after {
+            content: '.';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #fea100;
+            left: 3px;
+            top: 3px;
+        }
+    }
+}
