@@ -40,14 +40,12 @@ h2 {
     }
 }
 
-/* ICONS */
-.message-icon {
-    background: url(../../img/message-icon.png) no-repeat;
-    background-size: contain;
-    width: 48px;
-    height: 48px;
-    text-indent: -9999px;
-    display: inline-block;
+.flex-box {
+    display: flex;
+} 
+
+.flex-vert-align {
+    align-items: center;
 }
 
 /*HEADER*/
@@ -189,15 +187,25 @@ h2 {
     color: #14141d;
     border: 1px solid #dde3e7;
 
-    .middle-bar__col1 {
-        border-right: 1px solid #dde3e7;
-    }
-
     .orange {
         font-size: 16px;
     }
-    
+}    
+.middle-bar__col1 {
+    border-right: 1px solid #dde3e7;
+
+    .message-icon {
+        background: url(../../img/message-icon.png) no-repeat 0px -7px;
+        width: 124px;
+        height: 40px;
+        padding-left: 55px;
+    }
+
+    .orange-button {
+        margin-left: 10px;
+    }
 }
+
 .pink-label {
     width: 204px;
     height: 202px;
@@ -214,5 +222,4 @@ h2 {
         margin-top: -38px;
         margin-bottom: 20px;
     }
-
 }

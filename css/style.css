@@ -38,14 +38,12 @@ h2 {
   top: 4px;
 }
 
-/* ICONS */
-.message-icon {
-  background: url(../../img/message-icon.png) no-repeat;
-  background-size: contain;
-  width: 48px;
-  height: 48px;
-  text-indent: -9999px;
-  display: inline-block;
+.flex-box {
+  display: flex;
+}
+
+.flex-vert-align {
+  align-items: center;
 }
 
 /*HEADER*/
@@ -182,12 +180,23 @@ h2 {
   border: 1px solid #dde3e7;
 }
 
-.middle-bar .middle-bar__col1 {
+.middle-bar .orange {
+  font-size: 16px;
+}
+
+.middle-bar__col1 {
   border-right: 1px solid #dde3e7;
 }
 
-.middle-bar .orange {
-  font-size: 16px;
+.middle-bar__col1 .message-icon {
+  background: url(../../img/message-icon.png) no-repeat 0px -7px;
+  width: 124px;
+  height: 40px;
+  padding-left: 55px;
+}
+
+.middle-bar__col1 .orange-button {
+  margin-left: 10px;
 }
 
 .pink-label {
