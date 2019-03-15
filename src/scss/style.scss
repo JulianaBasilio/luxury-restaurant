@@ -12,8 +12,23 @@ body {
 h2 {
     font-family: 'Playfair Bold';
     font-size: 35px;
+    color: #14141d;
+    margin-bottom: 15px;
 }
 
+p {
+    font-family: 'Sintony';
+    line-height: 2;
+    margin-bottom: 15px;
+}
+
+.btn-default {
+    background-color: #fea100;
+    color: #fff;
+    font-family: 'Sintony Bold';
+    border: none;
+    padding: 15px 35px;
+}
 .orange {
     color: #fea100;
 }
@@ -177,7 +192,6 @@ h2 {
 }
 
 /* MAIN */
-
 .middle-bar {
     background: #edf1f3;
     height: 100px;
@@ -186,6 +200,12 @@ h2 {
     padding-top: 30px;
     color: #14141d;
     border: 1px solid #dde3e7;
+    
+    p {
+        line-height: 1;
+        font-family: 'Sintony Bold';
+        margin-bottom: 0;
+    }
 
     .orange {
         font-size: 16px;
@@ -193,17 +213,38 @@ h2 {
 }    
 .middle-bar__col1 {
     border-right: 1px solid #dde3e7;
+    padding: 0;
 
     .message-icon {
         background: url(../../img/message-icon.png) no-repeat 0px -7px;
         width: 124px;
         height: 40px;
         padding-left: 55px;
+        
+        
     }
 
     .orange-button {
         margin-left: 10px;
     }
+}
+
+.middle-bar__col2 {
+    border-right: 1px solid #dde3e7;
+
+    .phone-icon {
+        background: url(../../img/phone-icon.png) no-repeat 0px -7px;
+        width: 190px;
+        height: 46px;
+        padding-left: 55px;
+        margin: 0 auto;
+    }
+}
+
+.middle-bar__col3 p {
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Playfair Bold';
 }
 
 .pink-label {
@@ -214,12 +255,37 @@ h2 {
     margin-top: -145px;
     color: #fff;
     font-size: 22px;
-    font-family: 'Playfair Bold';
+    p {
+        font-family: 'Playfair Bold';
+    }
 
     img {
         border: 3px solid #fe4c8d;
         border-radius: 50%;
         margin-top: -38px;
         margin-bottom: 20px;
+    }
+}
+
+/*ABOUT*/ 
+.about {
+    margin-top: 65px;
+
+    h2 {
+        margin-top: 70px;
+    }
+
+    img {
+        margin-bottom: 5px;
+    }
+
+    .btn-default {
+        float: left;
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+
+    .img-block {
+        margin-top: 70px;
     }
 }
