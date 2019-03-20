@@ -7,11 +7,15 @@ body {
   color: #5c6369;
 }
 
-h2 {
+h2, h3 {
   font-family: 'Playfair Bold';
   font-size: 35px;
   color: #14141d;
   margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 26px;
 }
 
 p {
@@ -149,14 +153,14 @@ p {
   color: #fea100;
 }
 
-#carousel-banner .carousel-indicators {
+.carousel-indicators {
   left: 50px;
   width: auto;
   margin-left: 0;
   top: 50%;
 }
 
-#carousel-banner .carousel-indicators li {
+.carousel-indicators li {
   width: 13px;
   height: 13px;
   border-radius: 13px;
@@ -165,16 +169,17 @@ p {
   margin-bottom: 5px;
 }
 
-#carousel-banner .carousel-indicators .active {
+.carousel-indicators .active {
   width: 15px;
   height: 15px;
   border-radius: 15px;
   border-color: #fea100;
   background: none;
   position: relative;
+  margin-bottom: 5px;
 }
 
-#carousel-banner .carousel-indicators .active::after {
+.carousel-indicators .active::after {
   content: '.';
   position: absolute;
   width: 5px;
@@ -263,7 +268,7 @@ p {
 
 /*ABOUT*/
 .about {
-  margin-top: 65px;
+  margin: 65px 0;
 }
 
 .about h2 {
@@ -282,4 +287,60 @@ p {
 
 .about .img-block {
   margin-top: 70px;
+}
+
+/* SPECIAL */
+.special {
+  position: relative;
+  margin-bottom: 50px;
+  background: url(../../img/image-1970x440.png) no-repeat;
+}
+
+.special h2 {
+  color: #fff;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 25px;
+}
+
+.special .carousel-indicators {
+  top: -23px;
+  right: 14px;
+  left: auto;
+  width: 54px;
+}
+
+.special .carousel-indicators li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.special .carousel-inner {
+  padding-bottom: 50px;
+}
+
+.carousel-special-item {
+  box-shadow: 0px 4px 27px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background: #fff;
+}
+
+.carousel-special-item img {
+  width: 100%;
+}
+
+.carousel-special-item figcaption {
+  padding: 40px 40px 20px 40px;
+}
+
+.carousel-special-list {
+  text-align: left;
+}
+
+.carousel-special-list ul {
+  overflow: hidden;
+}
+
+.carousel-special-list ul li {
+  float: left;
 }
