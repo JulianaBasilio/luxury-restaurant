@@ -24,6 +24,10 @@ p {
   margin-bottom: 15px;
 }
 
+sup {
+  font-size: 15px;
+}
+
 .btn-default {
   background-color: #fea100;
   color: #fff;
@@ -34,6 +38,10 @@ p {
 
 .orange {
   color: #fea100;
+}
+
+.pink {
+  color: #fe4c8d;
 }
 
 .orange-button {
@@ -330,17 +338,34 @@ p {
 }
 
 .carousel-special-item figcaption {
-  padding: 40px 40px 20px 40px;
+  padding: 40px 40px 25px 40px;
 }
 
 .carousel-special-list {
   text-align: left;
-}
-
-.carousel-special-list ul {
   overflow: hidden;
+  border-top: 1px solid #e1e1e1;
+  padding-top: 20px;
 }
 
-.carousel-special-list ul li {
+.carousel-special-list li {
   float: left;
+  color: #14141d;
+  font-weight: bold;
+}
+
+.carousel-special-list .special-list-number {
+  font-family: 'Playfair Bold';
+  color: #14141d;
+  font-size: 26px;
+  border-left: 1px solid #e1e1e1;
+  margin-left: 15px;
+  padding-left: 15px;
+}
+
+.carousel-special-list .special-list-price {
+  font-family: 'Playfair Bold';
+  color: #fea100;
+  font-size: 30px;
+  float: right;
 }
