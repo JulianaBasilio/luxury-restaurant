@@ -74,6 +74,12 @@ sup {
   align-items: center;
 }
 
+.float-img {
+  float: right;
+  margin-top: -245px;
+  margin-right: -130px;
+}
+
 /*HEADER*/
 #header {
   background: #fff;
@@ -368,4 +374,13 @@ sup {
   color: #fea100;
   font-size: 30px;
   float: right;
+}
+
+/* FOOD MENU */
+.food-menu {
+  margin-bottom: 100px;
+}
+
+.food-menu h2 {
+  text-align: center;
 }

@@ -37,6 +37,7 @@ sup {
     border: none;
     padding: 15px 35px;
 }
+
 .orange {
     color: #fea100;
 }
@@ -73,6 +74,12 @@ sup {
 
 .flex-vert-align {
     align-items: center;
+}
+
+.float-img {
+    float: right;
+    margin-top: -245px;
+    margin-right: -130px;
 }
 
 /*HEADER*/
@@ -373,4 +380,18 @@ sup {
         font-size: 30px;
         float: right;
     }
+}
+
+/* FOOD MENU */ 
+.food-menu {
+    margin-bottom: 100px;
+    
+    h2 {
+        text-align: center;
+    }
+
+}
+
+.food-nav {
+
 }
