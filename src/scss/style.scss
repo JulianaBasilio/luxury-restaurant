@@ -1,5 +1,7 @@
-@import "../../css/reset.css";
-@import "../../css/fonts.css";
+@import "bootstrap.min";
+@import "reset";
+@import "fonts";
+@import "all";
 
 /* GENERAL */ 
 
@@ -20,10 +22,21 @@ h3 {
     font-size: 26px;
 }
 
+h5 {
+    font-size: 16px;
+}
+
 p {
     font-family: 'Sintony';
     line-height: 2;
     margin-bottom: 15px;
+}
+
+a {
+    color: #14141d;
+    &:hover {
+        color: #14141d;
+    }
 }
 
 sup {
@@ -393,5 +406,171 @@ sup {
 }
 
 .food-nav {
+    margin-top: 40px;
+
+    .nav-tabs {
+        border: none;
+        font-size: 20px;
+        font-family: 'Playfair Bold';
+        width: 704px;
+        margin: 0 auto;
+
+        > li {
+            margin-bottom: 0;
+
+            > a {
+                border: none;
+                position: relative;
+                padding-top: 40px;
+                background-position-y: 0px;
+
+                &:after {
+                    background: url(../../img/sprite-icons.png) no-repeat;
+                    width: 25px;
+                    height: 25px;
+                    content:".";
+                    text-indent: -9999px;
+                    position:absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                &[aria-controls="all"]  {
+                    &:after {
+                        background-position-x: 0px;
+                    }
+                }
+
+                &[aria-controls="breakfast"]{
+                    &:after {
+                        background-position-x: -106px;
+                    }
+                }
+
+                &[aria-controls="lunch"]{
+                    &:after {
+                        background-position-x: -227px;
+                    }
+                }
+
+                &[aria-controls="snacks"]{
+                    &:after {
+                        background-position-x: -340px;
+                    }
+                }
+
+                &[aria-controls="pizza"]{
+                    &:after {
+                        background-position-x: -446px;
+                    }
+                }
+
+                &[aria-controls="soups"]{
+                    &:after {
+                        background-position-x: -547px;
+                    }
+                }
+
+                &[aria-controls="dinner"]{
+                    &:after {
+                        background-position-x: -658px;
+                        background-position-y: -3px;
+                    }
+                }
+
+                &:hover,
+                &:focus {
+                    background-color: transparent;
+
+                    &:after {
+                        background-image: url(../../img/sprite-icons-hover.png);
+                        transition: background 0.5s ease-out;
+                    }
+                }
+            }
+        }
+
+        > li.active {
+            > a {
+                border: none;
+                &:after {
+                    background-image: url(../../img/sprite-icons-hover.png);
+                }
+
+                &:focus,
+                &:hover {
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        border-top: 1px dashed #a3b0ba;
+        padding-top: 50px;
+
+        .food-list {
+            li {
+                border-bottom: 1px solid #eee;
+                margin-bottom: 23px;
+                padding-bottom: 23px;
+                position: relative;
+            }
+        }
+
+        .food-title {
+            color: #14141d;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 0 0 5px 0;
+        }
+
+        .food-price {
+            font-size: 26px;
+            font-family: 'Playfair Bold';
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+
+        >.tab-pane {
+            opacity: 0; 
+            height: 0;
+            overflow: hidden;
+            display: block;
+            transition: opacity 1s linear;
+        }
+        >.active {
+            height: auto;
+            opacity: 1;
+        }
+    }
+}
+
+//Section Feedback Clients
+.feedback-clients {
+    padding: 100px 0;
+    color: #fff;
+    background: url(../../img/bg-pink.png);
+    
+    img {
+        border: 3px solid #fff;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+    }
+
+
+    h2 {
+        color: #fff;
+    }
+
+    .client-rating {
+        color: #fff221;
+    }
 
 }
