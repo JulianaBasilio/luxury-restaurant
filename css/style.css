@@ -13009,6 +13009,10 @@ sup {
   top: 3px;
 }
 
+.carousel-control.right, .carousel-control.left {
+  background: none;
+}
+
 /* MAIN */
 .middle-bar {
   background: #edf1f3;
@@ -13318,15 +13322,13 @@ sup {
 }
 
 .feedback-clients {
-  padding: 100px 0;
+  padding: 40px 0;
   color: #fff;
   background: url(../../img/bg-pink.png);
 }
 
 .feedback-clients img {
   border: 3px solid #fff;
-  height: 120px;
-  width: 120px;
   border-radius: 50%;
 }
 
@@ -13334,6 +13336,40 @@ sup {
   color: #fff;
 }
 
+.feedback-clients .cliente-text {
+  font-size: 15px;
+  max-width: 800px;
+  margin: 25px auto;
+  position: relative;
+}
+
+.feedback-clients .cliente-text:before, .feedback-clients .cliente-text:after {
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+}
+
+.feedback-clients .cliente-text:before {
+  content: url(../../img/quote-left.png);
+  left: -45px;
+}
+
+.feedback-clients .cliente-text:after {
+  content: url(../../img/quote-right.png);
+  right: -45px;
+}
+
+.feedback-clients .client-name {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
 .feedback-clients .client-rating {
   color: #fff221;
+}
+
+.reservation {
+  padding: 40px 0;
 }
