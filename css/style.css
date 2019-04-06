@@ -13373,3 +13373,77 @@ sup {
 .reservation {
   padding: 40px 0;
 }
+
+.reservation h2 {
+  margin-bottom: 40px;
+}
+
+.reserve-table {
+  margin-top: 30px;
+}
+
+.reserve-table .input-group {
+  display: block;
+  position: relative;
+}
+
+.reserve-table .input-group input {
+  width: 100%;
+  margin-bottom: 40px;
+  border: none;
+  border-bottom: 1px solid #c7d1d6;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  outline: none;
+}
+
+.reserve-table .input-group .input-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.reserve-table .input-group .input-icon.name {
+  background: url(../../img/icon-name.png);
+}
+
+.reserve-table .input-group .input-icon.time {
+  background: url(../../img/icon-time.png);
+}
+
+.reserve-table .input-group .input-icon.guest {
+  background: url(../../img/icon-guest.png);
+}
+
+.reserve-table .input-group .input-icon.date {
+  background: url(../../img/icon-date.png);
+}
+
+.reserve-table .input-group .input-icon.email {
+  background: url(../../img/icon-email.png);
+}
+
+.reserve-table .input-group .input-icon.phone {
+  background: url(../../img/icon-phone.png);
+}
+
+.reserve-table p {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 1.6;
+  font-size: 13px;
+  text-align: center;
+}
+
+.reserve-table .middle-bar__col3 p {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.reserve-table .btn-default {
+  width: 100%;
+  padding: 15px 14px;
+}
